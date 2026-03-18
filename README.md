@@ -131,7 +131,7 @@ edututor-ai/
 ### Step 1 — Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/edututor-ai.git
+git clone https://github.com/M-das2004/edututor-ai.git
 cd edututor-ai
 ```
 
@@ -155,7 +155,7 @@ pip install -r requirements.txt
 Create a file named `.env` in the project root:
 
 ```env
-GEMINI_API_KEY=AIzaSy...paste_your_actual_key_here
+GEMINI_API_KEY=your_actual_key
 ```
 
 > ⚠️ Never commit this file to Git. Add `.env` to your `.gitignore`.
