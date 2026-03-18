@@ -1,0 +1,347 @@
+SUBJECT: Software Engineering
+CHUNK_ID: 0
+TITLE: Introduction
+PAGES: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+WORD_COUNT: 3194
+============================================================
+
+
+252  Fundamentals of Software Engineering
+	It is a common oversight to have either too few or too many bubbles in a DFD. Only 
+three to seven bubbles per diagram should be allowed. This also means that each 
+bubble in a DFD should be decomposed three to seven bubbles in the next level.
+	Many	beginners	 leave	the	DFDs	at	the	diﬀerent 	
+levels of a DFD model unbalanced.
+	A	common	 mistake	 committed	 by	many	beginners	
+while	developing	 a	DFD	model	is	attempting	 to	
+represent control information in a DFD.
+The following are some illustrative mistakes of trying 
+to represent control aspects such as:
+ILLUSTRATION 1  A book can be searched in the library catalog by inputting its name. 
+If the book is available in the library, then the details of the book are displayed. If the 
+book is not listed in the catalog, then an error message is generated. While developing 
+the DFD model for this simple problem, many beginners commit the mistake of drawing 
+an arrow (as shown in Figure 6.6) to indicate that the error function is invoked after the 
+search book. But, this is a control information and should not be shown on the DFD.
+FIGURE 6.6  It is incorrect to show control information on a DFD.
+ILLUSTRATION 2  Another type of error occurs when one tries to represent when 
+or in what order difierent functions (processes) are invoked. A DFD similarly should not 
+represent the conditions under which different functions are invoked.
+ILLUSTRATION 3  If a bubble A invokes either the bubble B or the bubble C 
+depending upon some conditions, we need only to represent the data that ﬂows between 
+bubbles A and B or bubbles A and C and not the conditions depending on which the 
+two modules are invoked.
+	A data ﬂow arrow should not connect two data stores or even a data store with an 
+external entity. Thus, data cannot ﬂow from a data store to another data store or 
+to an external entity without any intervening processing. As a result, a data store 
+should be connected only to bubbles through data flow arrows.
+It is important to realise that 
+a DFD represents only data flow, and it does not represent any control information.
+
+Function-Oriented Software Design  253
+	All the functionalities of the system must be captured by the DFD model. No 
+function of the system speciﬁed in the SRS document of the system should be 
+overlooked.
+	Only those functions of the system speciﬁed in the SRS document should be 
+represented. That is, the designer should not assume functionality of the system 
+not speciﬁed by the SRS document and then try to represent them in the DFD.
+	Incomplete data dictionary and data dictionary showing incorrect composition of 
+data items are other frequently committed mistakes.
+	The data and function names must be intuitive. Some students and even practicing 
+developers use meaningless symbolic data names such as a,b,c, etc. Such names 
+hinder understanding the DFD model.
+	Novices usually clutter their DFDs with too many data ﬂow arrow. It becomes 
+difficult to understand a DFD if any bubble is associated with more than seven 
+data ﬂows. When there are too many data ﬂowing in or out of a DFD, it is better 
+to combine these data items into a high-level data item. Figure 6.7 shows an 
+example concerning how a DFD can be simpliﬁed by combining several data 
+ﬂows into a single high-level data ﬂow.
+FIGURE 6.7  Illustration of how to avoid data cluttering.
+We now illustrate the structured analysis technique through a few examples.
+EXAMPLE 6.1 (RMS Calculating Software)  A software system called RMS calculating 
+software	 would	read	three	integral	 numbers	 from	the	user	in	the	range	of	–1000	and	
++1000 and would determine the root mean square (RMS) of the three input numbers and  
+display it.
+
+254  Fundamentals of Software Engineering
+In this example, the context diagram is simple to draw. The system accepts 
+three integers from the user and returns the result to him. This has been shown in  
+Figure 6.8(a). To draw the level 1 DFD, from a cursory analysis of the problem description, 
+we can see that there are four basic functions that the system needs to perform—accept 
+the input numbers from the user, validate the numbers, calculate the root mean square of 
+the	input	numbers	 and,	then	display	the	result.	After	representing	 these	four	functions	 in	
+Figure 6.8(b), we observe that the calculation of root mean square essentially consists of 
+the	functions—calculate	 the	squares	of	the	input	numbers,	 calculate	 the	mean,	and	ﬁnally	
+calculate the root. This decomposition is shown in the level 2 DFD in Figure 6.8(c).
+FIGURE 6.8  Context diagram, level 1, and level 2 DFDs for Example 6.1.
+
+Function-Oriented Software Design  255
+Data dictionary for the DFD model of Example 6.1
+data-items: {integer}3
+rms:  float
+valid-data:data-items
+a: integer
+b: integer
+c: integer
+asq: integer
+bsq: integer
+csq: integer
+msq: integer
+Example 6.1 is an almost trivial example and is only meant to illustrate the basic 
+methodology. Now, let us perform the structured analysis for a more complex problem.
+EXAMPLE 6.2 (Tic-Tac-Toe Computer Game)  Tic-tac-toe is a computer game in which 
+a human player and the computer make alternate moves on a 3 × 3 square. A move consists 
+of	marking	 a	previously	 unmarked	 square.	The	player	who	is	ﬁrst	to	place	three	consecutive	
+marks along a straight line (i.e., along a row, column, or diagonal) on the square wins. As 
+soon as either of the human player or the computer wins, a message congratulating the 
+winner should be displayed. If neither player manages to get three consecutive marks along 
+a	straight	line	and	all	the	squares	on	the	board	are	ﬁlled	up,	then	the	game	is	drawn.	The	
+computer always tries to win a game.
+The context diagram and the level 1 DFD are shown in Figure 6.9.
+Data dictionary for the DFD model of Example 6.2
+move: integer /* number between 1 to 9 */
+display: game+result
+game: board 
+board:	{integer}9
+result:	[“computer	 won”,	“human	 won”,	“drawn”]
+EXAMPLE      6.3   (Supermarket Prize Scheme)  A super market needs to develop a soft -
+ware that would help it to automate a scheme that it plans to introduce to encourage 
+regular	customers.	 In	this	scheme,	 a	customer	 would	have	ﬁrst	register	by	supplying	 his/
+her residence address, telephone number, and the driving license number. Each customer 
+who registers for this scheme is assigned a unique customer number (CN) by the computer. 
+A	customer	 can	present	his	CN	to	the	checkout	 staﬀ	when	he	makes	any	purchase.	 In	this	
+case, the value of his purchase is credited against his CN. At the end of each year, the 
+supermarket intends to award surprise gifts to 10 customers who make the highest total 
+purchase over the year. Also, it intends to award a 22 caret gold coin to every customer 
+whose purchase exceeded `10,000. The entries against the CN are reset on the last day of 
+every year after the prize winners’ lists are generated.
+The context diagram for the supermarket prize scheme problem of Example 6.3 is 
+shown in Figure 6.10 . The level 1 DFD in Figure 6.11 . The level 2 DFD in Figure 6.12 .
+
+256  Fundamentals of Software Engineering
+FIGURE 6.9  Context diagram and level 1 DFDs for Example 6.2.
+Data dictionary for the DFD model of Example 6.3
+address: name+house#+street#+city+pin
+sales-details:	 {item+amount}*	 +	CN
+CN: integer
+customer-data:	 {address+CN}*
+sales-info:	 {sales-details}*
+winner-list:	 surprise-gift-winner-list	 +	gold-coin-winner-list
+
+Function-Oriented Software Design  257
+FIGURE  6.10  Context diagram for Example 6.3.
+surprise-gift-winner-list:	 {address+CN}*
+gold-coin-winner-list:	 {address+CN}*
+gen-winner-command: command
+total-sales:	 {CN+integer}*
+Observations:  The following observations can be made from the Example 6.3.
+1. The fact that the customer is issued a manually prepared customer identity card 
+or that the customer hands over the identity card each time he makes a purchase 
+has not been shown in the DFD. This is because these are item transfers occurring 
+outside the computer.
+2. The data generate-winner-list in a way represents control information (that 
+is, command to the software) and no real data. We have included it in the DFD 
+because	it	simpliﬁes 	the	structured 	design	process	as	we	shall	realize	after	we	
+practise solving a few problems. We could have also as well done without the 
+generate-winner-list data, but this could have a bit complicated the design.
+3. Observe in Figure 6.11 that we have two separate stores for the customer data and 
+sales data. Should we have combined them into a single data store? The answer 
+is—No, we should not. If we had combined them into a single data store, the 
+structured design that would be carried out based on this model would become 
+complicated.	 Customer	 data	and	sales	data	have	very	diﬀerent	 characteristics.	 For	
+example, customer data once created, does not change. On the other hand, the 
+sales data changes frequently and also the sales data is reset at the end of a year, 
+whereas the customer data is not.
+
+258  Fundamentals of Software Engineering
+FIGURE 6.11  Level 1 diagram for Example 6.3.
+FIGURE 6.12  Level 2 diagram for Example 6.3.
+
+Function-Oriented Software Design  259
+EXAMPLE 6.4 [Trading-house Automation System (TAS)]  A	trading	house	wants	us	
+to develop a computerized system that would automate various book-keeping activities 
+associated with its business. The following are the salient features of the system to be 
+developed:
+	The trading house has a set of regular customers. The customers place orders 
+with it for various kinds of commodities. The trading house maintains the names 
+and addresses of its regular customers. Each of these regular customers should 
+be assigned a unique customer identiﬁcation number (CIN) by the computer. The 
+customers quote their CIN on every order they place.
+	Once order is placed, as per current practice, the accounts department of the trading 
+house	ﬁrst	checks	the	credit-worthiness	 of	the	customer.	 The	credit-worthiness	 of	
+the	customer	 is	determined	 by	analysing	 the	history	of	his	payments	 to	diﬀerent	
+bills sent to him in the past. After automation, this task has be done by the 
+computer.
+	If a customer is not credit-worthy, his orders are not processed any further and an 
+appropriate order rejection message is generated for the customer.
+	If a customer is credit-worthy, the items that he has ordered are checked against 
+the list of items that the trading house deals with. The items in the order which the 
+trading house does not deal with, are not processed any further and an appropriate 
+apology message for the customer for these items is generated.
+	The items in the customer’s order that the trading house deals with are checked for 
+availability in the inventory. If the items are available in the inventory in desired 
+quantity, then:
+– A bill is with the forwarding address of the customer is printed.
+–  A material issue slip is printed. The customer can produce this material issue 
+slip at the store house and take delivery of the items.
+– Inventory	 data	is	adjusted	 to	reﬂect	the	sale	to	the	customer.
+	If	any	of	the	ordered	 items	are	not	available	 in	the	inventory	 in	sufficient	 quantity	
+to satisfy the order, then these out-of-stock items along with the quantity ordered 
+by	the	customer	 and	the	CIN	are	stored	in	a	“pending-order”	 ﬁle	for	further	
+processing	 to	be	carried	out	when	the	purchase	 department	 issues	the	“generate	
+indent” command.
+	The purchase department should be allowed to periodically issue commands to 
+generate indents. When a command to generate indents is issued, the system 
+should	examine	 the	“pending-order”	 ﬁle	to	determine	 the	orders	that	are	pending	
+and	determine	 the	total	quantity	 required	 for	each	of	the	items.	It	should	ﬁnd	out	
+the	addresses	 of	the	vendors	 who	supply	these	items	by	examining	 a	ﬁle	containing	
+vendor details and then should print out indents to these vendors.
+	The system should also answer managerial queries regarding the statistics of 
+diﬀerent	 items	sold	over	any	given	period	of	time	and	the	corresponding	 quantity	
+sold and the price realised.
+The context diagram for the trading house automation problem is shown in  
+Figure 6.13 . The level 1 DFD in Figure  6.14.
+
+260  Fundamentals of Software Engineering
+FIGURE 6.13  Context diagram for Example 6.4.
+FIGURE 6.14  Level 1 DFD for Example 6.4.
+Data dictionary for the DFD model of Example 6.4
+response: [bill + material-issue-slip, reject-msg,apology-msg]
+query: period /* query from manager regarding sales statistics*/
+period: [date+date,month,year,day]
+
+Function-Oriented Software Design  261
+date: year + month + day
+year: integer
+month: integer
+day: integer
+customer-id: integer
+order:	customer-id	 +	{items	+	quantity}*	 +	order#
+accepted-order: order /* ordered items available in inventory */
+reject-msg: order + message /* rejection message */
+pending-orders:	 customer-id	 +	order#	+	{items+quantity}*
+customer-address: name+house#+street#+city+pin
+name: string
+house#: string
+street#: string
+city: string
+pin: integer
+customer-id: integer
+customer-file:	 {customer-address}*	 +	customer-id
+bill:	{item	+	quantity	 +	price}*	+	total-amount	 +	customer-address	 +	order#
+material-issue-slip: message + item + quantity + customer-address
+message: string
+statistics:	 {item	+	quantity	 +	price	}*
+sales-statistics:	 {statistics}*	 +	date
+quantity: integer
+order#: integer /* unique order number generated by the program */
+price: integer
+total-amount: integer
+generate-indent: command
+indent:	{item+quantity}*	 +	vendor-address
+indents:	 {indent}*
+vendor-address: customer-address
+vendor-list:	 {vendor-address}*
+item-file:	 {item}*
+item: string
+indent-request: command
+Observations: The following observations can be made from Example 6.4.
+1. In	a	DFD,	if	two	data	stores	deal	with	diﬀerent 	
+types of data, e.g. one type of data is invariant with 
+time whereas another varies with time, (e.g. vendor 
+address, and inventory data) it is a good idea to 
+represent them as separate data stores.
+The inventory data changes each time supply 
+arrives and the inventory is updated or an item is 
+sold, whereas the vendor data remains unchanged.
+2. If we are developing the DFD model of a process which is already being manually 
+carried out, then the names of the registers being maintained in the manual process 
+would appear as data stores in the DFD model. For example, if TAS is currently 
+If two types of data always 
+get updated at the same time, they should be stored in a single data store. Otherwise, separate data stores should be used for them.
+
+262  Fundamentals of Software Engineering
+being manually carried out, then normally there would registers corresponding to 
+accepted orders, pending orders, vendor list, etc.
+3. We can observe that DFDs enable a software developer to develop the data domain 
+and functional domain model of the system at the same time. As the DFD is 
+reﬁned	into	greater	levels	of	detail,	the	analyst	performs	 an	implicit	functional 	
+decomposition.	 At	the	same	time,	the	DFD	reﬁnement	 automatically	 results	in	
+reﬁnement	 of	corresponding	 data	items.
+4. The data that are maintained in physical registers in manual processing, become 
+data stores in the DFD representation. Therefore, to determine which data should 
+be represented as a data store, it is useful to try to imagine whether a set of data 
+items would be maintained in a register in a manual system.
+EXAMPLE 6.5 (Personal Library Software)  Structured analysis for the personal library  
+software is shown in Figure 6.15, Figure 6.16 and Figure 6.17.
+FIGURE 6.15  Context diagram for Example 6.5.
+The level 1 DFD is shown in Figure 6.16.
+The level 2 DFD for the manage OwnBook bubble is shown in Figure  6.17.
+FIGURE 6.16  Level 1 DFD for Example 6.5.
+
+Function-Oriented Software Design  263
+FIGURE 6.17  Level 2 DFD for Example 6.5.
+Data dictionary for the DFD model of Example 6.5
+input-data: friend-reg-data + own-book-data + stat-request + borrowed-book-data
+response: friend-reg-conf-msg + own-book-response + stat-response +
+ borrowed-book-response
+own-book-data: query-details + own-book-details + query-outstanding-books-option +
+ return-own-book-details + reg-own-book-data
+own-book-response: query-book-response + issue-book-msg + friend-details + return-book-
+msg + serial#.
+borrowed-book-data: borrowed-book-details + book-return-details + display-books-option
+borrowed-book-response: reg-msg + unreg-msg + borrowed-books-list
+friend-reg-data: name + address + landline# + mobile#
+own-book-details: friend-reg-data + book-title + data-of-issue
+return-own-book-details: book-title + date-of-return
+friend-details: name + address + landline# + mobile# + book-list
+borrowed-book-details: book-title + borrow-date
+serial#: integer
+Observation:  Observe that since there are more than seven functional requirements for 
+the	personal	 library	software,	 related	requirements	 have	been	combined	 to	have	only	ﬁve	
+bubbles in the level 1 diagram. Only level 2 DFD has been shown, since the other DFDs 
+are trivial and need not be drawn.
+
+264  Fundamentals of Software Engineering
+Shortcomings of the DFD model
+DFD	models	suﬀer	from	several	shortcomings.	 The	important	 shortcomings	 of	DFD	models	
+are the following:
+	Imprecise DFDs leave ample scope to be imprecise. In the DFD model, we judge 
+the function performed by a bubble from its label. However, a short label may not 
+capture	 the	entire	functionality	 of	a	bubble.	 For	example,	 a	bubble	named	ﬁnd-
+book-position has only intuitive meaning and does not specify several things, e.g. 
+what happens when some input information is missing or is incorrect. Further, the 
+ﬁnd-book-position	 bubble	may	not	convey	anything	 regarding	 what	happens	 when	
+the required book is missing.
+	Not-well	 deﬁned	control	aspects	are	not	deﬁned	by	a	DFD.	For	instance,	 the	order	in	
+which	inputs	are	consumed	 and	outputs	 are	produced	 by	a	bubble	is	not	speciﬁed.	
+A	DFD	model	does	not	specify	the	order	in	which	the	diﬀerent	 bubbles	are	executed.	
+Representation of such aspects is very important for modelling real-time systems.
+	Decomposition: The method of carrying out decomposition to arrive at the successive 
+levels and the ultimate level to which decomposition is carried out are highly 
+subjective and depend on the choice and judgment of the analyst. Due to this reason, 
+even for the same problem, several alternative DFD representations are possible. 
+Further, many times it is not possible to say which DFD representation is superior 
+or preferable to another one.
+	Improper	 data	ﬂow	diagram:	 The	data	ﬂow	diagramming	 technique	 does	not	 provide	
+any	speciﬁc	guidance	 as	to	how	exactly	to	decompose	 a	given	function	 into	its	
+subfunctions and we have to use subjective judgment to carry out decomposition.
+6.3.3  Extending DFD Technique to make it Applicable to  
+Real-time Systems
+In a real-time system, some of the high-level functions are associated with deadlines. 
+Therefore, a function must not only produce correct results but also should produce 
+them	by	some	prespeciﬁed	 time.	For	real-time	 systems,	 execution	 time	is	an	important	
+consideration for arriving at a correct design. Therefore, explicit representation of control 
+and	event	ﬂow	aspects	are	essential.	 One	of	the	widely	accepted	 techniques	 for	extending	
+the DFD technique to real-time system analysis is the Ward and Mellor technique [1985]. 
+In	the	Ward	and	Mellor	notation,	 a	type	of	process	 that	handles	 only	control	ﬂows	is	
+introduced. These processes representing control processing are denoted using dashed 
+bubbles.	 Control	 ﬂows	are	shown	using	dashed	lines/arrows.
+Unlike Ward and Mellor, Hatley and Pirbhai [1987] show the dashed and solid 
+representations on separate diagrams. To be able to separate the data processing and 
+the control processing aspects, a control ﬂow diagram (CFD)	is	deﬁned.	 This	reduces	 the	
+complexity of the diagrams. In order to link the data processing and control processing 
+diagrams,	 a	notational	 reference	 (solid	bar)	to	a	control	speciﬁcation	 is	used.	The	CSPEC	
+describes the following:
+	The	eﬀect	of	an	external	 event	or	control	signal.
+	The processes that are invoked as a consequence of an event.

@@ -1,0 +1,131 @@
+SUBJECT: Class 10 Science
+TOPIC: Core Science Concepts — Physics, Chemistry, Biology
+SOURCE: CBSE/State Board Curriculum
+
+UNIT 1: ELECTRICITY (PHYSICS)
+==============================
+
+Electric Current
+-----------------
+Electric current is the flow of electric charge through a conductor. It is measured in Amperes (A). 
+Current (I) = Charge (Q) / Time (t)
+Formula: I = Q/t
+
+Think of it like water flowing through a pipe — the amount of water flowing per second is like electric current.
+
+Ohm's Law
+---------
+Ohm's Law states that the current through a conductor between two points is directly proportional to the voltage across the two points, provided the temperature remains constant.
+
+Formula: V = I × R
+Where:
+V = Voltage (in Volts)
+I = Current (in Amperes)  
+R = Resistance (in Ohms, Ω)
+
+Example: A bulb has resistance 100Ω. If voltage is 220V, current = 220/100 = 2.2 A
+
+Resistance
+----------
+Resistance is the property of a conductor that opposes the flow of electric current. 
+Factors affecting resistance:
+1. Length of conductor — longer wire = more resistance
+2. Cross-sectional area — thicker wire = less resistance
+3. Material of conductor — copper has less resistance than iron
+4. Temperature — higher temperature = more resistance (for metals)
+
+Series and Parallel Circuits
+-----------------------------
+Series Circuit:
+- Components connected end to end
+- Same current flows through all components
+- Total resistance = R1 + R2 + R3
+- If one component fails, entire circuit breaks
+
+Parallel Circuit:
+- Components connected across common terminals
+- Voltage across each component is same
+- 1/Total R = 1/R1 + 1/R2 + 1/R3
+- If one component fails, others keep working (used in home wiring)
+
+UNIT 2: ACIDS, BASES AND SALTS (CHEMISTRY)
+===========================================
+
+Acids
+-----
+Acids are substances that produce H+ (hydrogen ions) in water solution.
+Properties of acids:
+- Sour taste (like lemon juice, tamarind)
+- Turn blue litmus paper RED
+- pH less than 7
+- React with metals to produce hydrogen gas
+
+Common acids: Hydrochloric acid (HCl), Sulfuric acid (H2SO4), Nitric acid (HNO3)
+Natural acids: Citric acid (lemon), Acetic acid (vinegar), Lactic acid (curd)
+
+Bases
+-----
+Bases are substances that produce OH- (hydroxide ions) in water solution.
+Properties of bases:
+- Bitter taste, soapy feel
+- Turn red litmus paper BLUE
+- pH greater than 7
+- Neutralize acids
+
+Common bases: Sodium hydroxide (NaOH), Calcium hydroxide Ca(OH)2
+Natural bases: Baking soda, washing soda
+
+pH Scale
+--------
+pH scale measures how acidic or basic a solution is. Range: 0 to 14
+- pH 0-6: Acidic (lower = more acidic)
+- pH 7: Neutral (pure water)
+- pH 8-14: Basic/Alkaline
+
+Neutralization Reaction
+-----------------------
+When an acid reacts with a base, they neutralize each other to form salt and water.
+Acid + Base → Salt + Water
+Example: HCl + NaOH → NaCl + H2O
+
+UNIT 3: LIFE PROCESSES (BIOLOGY)
+==================================
+
+Nutrition in Plants — Photosynthesis
+--------------------------------------
+Photosynthesis is the process by which green plants make their own food using sunlight.
+
+6CO2 + 6H2O → (sunlight + chlorophyll) → C6H12O6 + 6O2
+
+In simple words: Carbon dioxide + Water → (using sunlight) → Glucose + Oxygen
+
+Conditions needed for photosynthesis:
+1. Sunlight
+2. Chlorophyll (green pigment in leaves)
+3. Carbon dioxide (from air through stomata)
+4. Water (from soil through roots)
+
+Human Digestive System
+-----------------------
+Digestion is the process of breaking down food into simpler substances that can be absorbed.
+
+Path of food:
+Mouth → Oesophagus → Stomach → Small Intestine → Large Intestine → Anus
+
+Important organs:
+- Mouth: Mechanical digestion (chewing) + saliva breaks starch
+- Stomach: Gastric juice (HCl + pepsin) digests proteins
+- Small Intestine: Main site of digestion and absorption; receives bile from liver
+- Large Intestine: Absorbs water; undigested food exits as waste
+
+Respiration
+-----------
+Respiration is the process of releasing energy from food.
+
+Aerobic Respiration (with oxygen):
+C6H12O6 + 6O2 → 6CO2 + 6H2O + Energy (ATP)
+Occurs in: mitochondria
+
+Anaerobic Respiration (without oxygen):
+In yeast: Glucose → Ethanol + CO2 + Energy
+In muscles: Glucose → Lactic acid + Energy (causes muscle cramp)

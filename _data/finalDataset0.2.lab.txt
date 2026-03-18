@@ -1,0 +1,121 @@
+SUBJECT: Laboratory Practical Work
+TOPIC: Science Lab Experiments and Safety Guidelines
+SOURCE: CBSE Lab Manual
+
+CHAPTER 1: LABORATORY SAFETY RULES
+=====================================
+
+General Safety Rules
+---------------------
+ALWAYS follow these rules in the science laboratory:
+
+1. Never eat or drink in the laboratory
+2. Always wear a lab coat/apron when handling chemicals
+3. Wash hands thoroughly before and after experiments
+4. Never smell chemicals directly — use the "wafting" technique (wave hand over bottle)
+5. If chemicals spill on skin, immediately wash with lots of water
+6. Keep hair tied back and loose clothes tucked in
+7. Never point the mouth of a heated test tube at yourself or others
+8. Broken glassware must be reported immediately — do not touch broken glass
+9. Know the location of the fire extinguisher and first aid box
+10. Follow teacher's instructions exactly
+
+Common Lab Symbols and Meanings
+---------------------------------
+⚠ Caution/Warning — be careful
+☠ Toxic — do not inhale or touch
+🔥 Flammable — keep away from fire
+⚡ High voltage — do not touch
+☣ Biohazard — biological risk
+
+CHAPTER 2: IMPORTANT EXPERIMENTS (CLASS 9-10)
+================================================
+
+Experiment 1: Verifying Ohm's Law (Physics)
+--------------------------------------------
+Aim: To verify Ohm's Law and find the resistance of a wire
+
+Materials needed:
+- Battery (6V), rheostat, ammeter, voltmeter, connecting wires, resistance wire
+
+Procedure:
+1. Connect circuit: Battery → Rheostat → Ammeter → Resistance wire → back to battery
+2. Connect voltmeter across (parallel to) the resistance wire
+3. Vary the rheostat to change current; record Voltmeter (V) and Ammeter (I) readings
+4. Record at least 5 different readings
+
+Observations (sample):
+| V (Volts) | I (Amperes) | V/I (Ohms) |
+|-----------|-------------|-----------|
+| 1.0       | 0.1         | 10        |
+| 2.0       | 0.2         | 10        |
+| 3.0       | 0.3         | 10        |
+
+Conclusion: V/I = constant (= Resistance), which verifies Ohm's Law.
+
+Experiment 2: Testing for Starch in Food (Biology)
+----------------------------------------------------
+Aim: To test for the presence of starch using iodine solution
+
+Materials: Food samples (bread, rice, potato, apple), iodine solution, test tubes
+
+Procedure:
+1. Take small pieces of each food sample
+2. Add 2-3 drops of iodine solution to each
+3. Observe color change
+
+Results:
+- BLUE-BLACK color: Starch is PRESENT
+- No color change: Starch is ABSENT
+
+Expected results:
+- Bread: Blue-black ✓ (starch present)
+- Rice: Blue-black ✓ (starch present)  
+- Potato: Blue-black ✓ (starch present)
+- Apple: No change ✗ (no starch)
+
+Conclusion: Iodine solution is used as an indicator for starch. Blue-black color confirms presence of starch.
+
+Experiment 3: Acid-Base Indicators (Chemistry)
+------------------------------------------------
+Aim: To study the behavior of acids and bases using indicators
+
+Materials: HCl, NaOH, litmus solution, phenolphthalein, test tubes
+
+Observations:
+| Substance    | Litmus Color | Phenolphthalein | Nature  |
+|-------------|--------------|-----------------|---------|
+| HCl solution | Red          | Colorless       | Acid    |
+| NaOH solution| Blue         | Pink            | Base    |
+| Distilled Water| No change  | Colorless       | Neutral |
+| Lemon juice  | Red          | Colorless       | Acid    |
+| Baking soda  | Blue         | Pink            | Base    |
+
+Conclusion: Litmus turns red in acids and blue in bases. Phenolphthalein turns pink in bases and remains colorless in acids.
+
+CHAPTER 3: WRITING LAB REPORTS
+=================================
+
+Structure of a Lab Report
+---------------------------
+Every lab experiment report must include:
+
+1. AIM: What are you trying to find out? (1-2 sentences)
+2. MATERIALS: List all equipment and chemicals used
+3. PROCEDURE: Step-by-step instructions (use numbered points)
+4. PRECAUTIONS: What safety/accuracy precautions did you take?
+5. OBSERVATIONS: What did you see? (use tables/diagrams)
+6. CALCULATIONS: Show all working (if applicable)
+7. RESULT: What did you find? (1-2 sentences)
+8. CONCLUSION: What does this prove? Connect to theory.
+9. SOURCES OF ERROR: What could have made the results inaccurate?
+
+Common Mistakes in Lab Reports
+--------------------------------
+1. Writing "I did..." instead of passive voice ("The wire was connected...")
+2. Forgetting units (write 10 Ω not just 10)
+3. Not drawing neat, labeled diagrams
+4. Skipping precautions section
+5. Writing vague conclusions ("We found that the experiment worked")
+
+Always write: "The experiment proves/verifies that [theory]..."

@@ -1,0 +1,116 @@
+SUBJECT: Library and Research Skills
+TOPIC: How to Use Library Resources and Study Effectively
+SOURCE: University Library Guidelines
+
+CHAPTER 1: USING THE LIBRARY EFFECTIVELY
+==========================================
+
+How to Search for Books
+------------------------
+When looking for a book in the library:
+1. Use the library catalogue (usually a computer terminal at the entrance)
+2. Search by Title, Author, or Subject keyword
+3. Note the Call Number — this tells you where the book is on the shelf
+4. Books are arranged by subject using the Dewey Decimal System
+
+Dewey Decimal System (Simplified):
+- 000-099: General works, Computer Science
+- 100-199: Philosophy, Psychology
+- 200-299: Religion
+- 300-399: Social Sciences
+- 400-499: Language, Linguistics
+- 500-599: Natural Sciences, Mathematics
+- 600-699: Technology, Applied Sciences
+- 700-799: Arts, Recreation
+- 800-899: Literature
+- 900-999: History, Geography
+
+Reference Section
+-----------------
+The Reference Section contains books that cannot be borrowed — they must be used inside the library. These include:
+- Encyclopaedias (like Encyclopaedia Britannica)
+- Dictionaries and Thesaurus
+- Atlases and Maps
+- Year Books and Almanacs
+- Government Reports
+
+CHAPTER 2: READING AND NOTE-TAKING STRATEGIES
+===============================================
+
+SQ3R Method for Reading Textbooks
+-----------------------------------
+SQ3R stands for: Survey, Question, Read, Recite, Review
+
+1. SURVEY: Skim the chapter — read headings, subheadings, first/last paragraphs
+2. QUESTION: Turn each heading into a question (e.g., "What is photosynthesis?")
+3. READ: Read carefully to answer your questions
+4. RECITE: Close the book and recall what you read (say it aloud or write it)
+5. REVIEW: Review your notes and re-read unclear parts
+
+This method improves retention by 40% compared to simple reading.
+
+Note-Taking Techniques
+-----------------------
+Cornell Method:
+Divide your page into three sections:
+- Right column (large): Main notes during class
+- Left column (narrow): Key words and questions after class
+- Bottom section: Summary in your own words
+
+Mind Mapping:
+- Write the main topic in the center
+- Draw branches for major subtopics
+- Add smaller branches for details
+- Use colors and symbols to remember better
+
+CHAPTER 3: DIGITAL LIBRARY RESOURCES
+======================================
+
+Online Databases Available for Students
+-----------------------------------------
+Free resources every student should know:
+1. NPTEL (nptel.ac.in) — Free engineering and science video lectures by IIT professors
+2. DIKSHA (diksha.gov.in) — Government platform with NCERT content for all classes
+3. e-Pathshala — NCERT eBooks, audio books, and videos (free)
+4. SWAYAM — Free online courses with certificates from Indian universities
+5. National Digital Library (ndl.gov.in) — Over 6 crore books and papers (free)
+
+How to Download Free eBooks Legally
+-------------------------------------
+- NCERT official website (ncert.nic.in): All NCERT books from Class 1-12 free
+- Project Gutenberg (gutenberg.org): Over 60,000 classic books free
+- OpenLibrary (openlibrary.org): Borrow digital books free with library card
+- Google Books: Preview many books, some fully available free
+
+Evaluating Online Sources
+--------------------------
+Not all websites are reliable. Check:
+1. Author: Is the author qualified? Are credentials listed?
+2. Date: When was it published/updated? Is it recent enough?
+3. Source: Is it from .gov, .edu, or a reputed organization?
+4. Purpose: Is it trying to inform or sell/persuade?
+5. Accuracy: Can you verify the facts from other sources?
+
+CHAPTER 4: AVOIDING PLAGIARISM
+================================
+
+What is Plagiarism?
+-------------------
+Plagiarism is using someone else's words, ideas, or work without giving them credit. It is considered academic dishonesty and can lead to serious consequences.
+
+Types of plagiarism:
+1. Copy-paste plagiarism: Directly copying text without citation
+2. Paraphrasing plagiarism: Changing a few words but keeping the same idea without credit
+3. Self-plagiarism: Submitting your own previous work as new work
+
+How to Cite Sources (Simple Format)
+-------------------------------------
+For a book:
+Author Last Name, First Name. Title of Book. Publisher, Year.
+Example: Sharma, Ramesh. Class 10 Science Textbook. NCERT, 2023.
+
+For a website:
+Author (if known). "Page Title." Website Name, Date. URL.
+Example: "Photosynthesis." NCERT Portal, 2023. www.ncert.nic.in
+
+When in doubt — cite the source. It is always better to over-cite than to plagiarize.
