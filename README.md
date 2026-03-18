@@ -72,32 +72,6 @@ EduTutor AI uses **Context Pruning**: a technique that finds only the 3–4 most
 | 🆓 **Completely Free** | Runs on Gemini 2.5 Flash free tier — no credit card, no billing |
 | 📁 **Multi-subject** | Load as many textbooks as needed across subjects and classes |
 
----
-
-## 🖥️ UI Preview
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  🎓 EduTutor AI — Education Tutor for Remote India              │
-│  Powered by Gemini 2.5 Flash (Free) + Context Pruning           │
-├──────────────────────┬──────────────────────────────────────────┤
-│  🔑 Gemini API Key   │                                          │
-│  [••••••••••••••••]  │   👤  What is Ohm's Law?                │
-│                      │                                          │
-│  📖 Add Textbook     │   🤖  **Ohm's Law states that the       │
-│  [Upload PDF]        │   voltage across a conductor is          │
-│  [Subject name]      │   directly proportional to current.**   │
-│  [📥 Ingest PDF]     │                                          │
-│                      │   **Explanation:**                       │
-│  📚 Loaded Topics    │   • V = Voltage (Volts)                 │
-│  Science  5 chunks   │   • I = Current (Amperes)               │
-│  Exam Tips 3 chunks  │   • R = Resistance (Ohms, Ω)           │
-│  Lab Work  4 chunks  │                                          │
-│                      │   **Formula:** V = I × R                │
-│  [🗑️ Clear Chat]    │                                          │
-│                      │   ✂️ 1,842/22,150 words · 92% saved    │
-└──────────────────────┴──────────────────────────────────────────┘
-```
 
 ---
 
@@ -148,7 +122,7 @@ pip install -r requirements.txt
 1. Go to → **[https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)**
 2. Sign in with your Google account
 3. Click **"Create API Key"**
-4. Copy the key — it starts with `AIza...`
+4. Copy the key 
 
 ### Step 4 — Add your API key
 
@@ -439,6 +413,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <br/>
 
-[![Star this repo](https://img.shields.io/github/stars/YOUR_USERNAME/edututor-ai?style=social)](https://github.com/YOUR_USERNAME/edututor-ai)
+[![Star this repo](https://img.shields.io/github/stars/M-das2004/edututor-ai?style=social)](https://github.com/YOUR_USERNAME/edututor-ai)
 
 </div>
