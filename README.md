@@ -405,10 +405,10 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ## 👥 Developers
 
-| Name | Email |
+| Name | Email | Branch
 |---|---|---|
-| **Meghma Das** | meghmadas@mcsinfo.in |
-| **Argha Pal** | a1910pal@gmail.com |
+| **Meghma Das** | meghmadas@mcsinfo.in | IT |
+| **Argha Pal** | a1910pal@gmail.com | IT |
 
 **Instructor:** Mr. Sachin Balo (`sachin.balo@mckvie.edu.in`)  
 HOD & Assistant Professor, Information Technology  
